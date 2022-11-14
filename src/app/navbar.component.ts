@@ -17,7 +17,10 @@ import { Component, OnInit } from '@angular/core';
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
-          <div><a class="navbar-brand fs-4" href="#">Dashboard</a></div>
+          <div><a class="navbar-brand fs-4" [routerLink]="['/']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Dashboard</a></div>
           <div><ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
